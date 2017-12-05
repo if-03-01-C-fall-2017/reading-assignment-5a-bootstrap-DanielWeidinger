@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTL Leonding Bootstrap Cheat Sheet</title>
+
+
+  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-header">Bootstrap</h1>
+
+    <div class="container">
+      <h2>Containers</h2>
+
+      <ul>
+        <li>are the most basic layout elements in bootstrap</li>
+        <li>they use the default grid system of bootstrap</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h2>Headers</h2>
+
+      <ul>
+        <li>Class: page-header</li>
+        <li>adds some extra padding ...</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h2>Highlight Text</h2>
+
+      <ul>
+        <li>Class: lead</li>
+        <li>example:
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+          </p>
+        </li>
+      </ul>
+      <h6>tags</h6>
+
+      <ul>
+        <li>example mark:
+          <p>
+            <mark>Lorem ipsum dolor sit amet</mark>
+        </li>
+        <li>example del:
+          <del>incididunt ut labore</del>
+        </li>
+        <li>example u:
+          <u>ullamco laboris nisi</u>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h2>Alignment</h2>
+
+      <ul>
+        <li>Class: text-left
+          <p class="text-left">Left aligned text.</p>
+        </li>
+        <li>Class: text-center
+          <p class="text-center">Center aligned text.</p>
+        </li>
+        <li>Class: text-right
+          <p class="text-right">Right aligned text.</p>
+        </li>
+        <li>Class: text-justify
+          <p class="text-justify">Justified text.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h2>Transformation</h2>
+
+      examples:
+      <ul>
+        <p class="text-left text-lowercase">Left aligend lowercase text.</p>
+        <p class="text-center text-uppercase">Centerd upperacse text.</p>
+        <p class="text-right text-capitalize">Right aligned capitalized text.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h2>Floating</h2>
+
+      The class pull-right" makes the element floating to the right. The class pull-leftmakes the elemnet floating to the left.
+      The class clearfix stops the floating
+      <br>
+      <br> example:
+      <div class="pull-right">Div floated to right</div>
+      <div class="pull-left">Div floated to left</div>
+      <div class="clearfix"></div>
+      <p>text after the div text </p>
+    </div>
+
+    <div class="container">
+      <h2>Tag: blockquote</h2>
+
+      If you want to add a quote you can use the blockquote HTML tag. To make it looks nice you can use the classes blockquote
+      or blockquote-reverse.
+      <br>
+      <br> examples:
+      <blockquote>Normal quote</blockquote>
+      <blockquote class="blockquote">class: blockquote</blockquote>
+      <blockquote class="blockquote-reverse">class: blockquote-reverse</blockquote>
+    </div>
+
+    <div class="container">
+      <h2>Lists</h2>
+
+      normal list:
+      <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+      </ul>
+
+      <h6>class: list-unstyled</h6>
+      no standart padding or bullets of HTML
+      <br>
+      <br> example:
+      <ul class="list-unstyled">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+      </ul>
+
+      <h6>class: list-inline</h6>
+      example:
+      <ul class="list-inline">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+      </ul>
+
+    </div>
+
+    <div class="container">
+      <h2>Contextual Colors</h2>
+
+      There are different classes to color your text or backgrounds. Here are the classes for the text.
+
+      <ul class="list-unstyled">
+        <li>text-primary gives the content a blue color.</li>
+        <li>text-success gives the content a green color.</li>
+        <li>text-info gives the content another green color.</li>
+        <li>text-warning gives the content a brown color.</li>
+        <li>text-danger gives the content a red color.</li>
+        <li>text-muted gives the content a gray color.</li>
+      </ul>
+
+      example:
+      <p class="text-primary">Hello World</p>
+      <p class="text-success">Hello World</p>
+      <p class="text-info">Hello World</p>
+      <p class="text-warning">Hello World</p>
+      <p class="text-danger">Hello World</p>
+      <p class="text-muted">Hello World</p>
+      <br>
+      <br> There are also classes for the backgrounds. Just use "bg" instead of "text". Try the following code in you index.html.
+    </div>
+
+    <div class="container">
+      <h2>Buttons</h2>
+
+      To create a button use the class btn btn-default. You can format a link as a button, use it for a normal button tag or for
+      an "input type button" which you can use in a form. So let's take a look at them. The code below shows an button on
+      your webpage. Try it in your cheatsheet. example:
+      <button class="btn btn-default">Button</button>
+
+      button as link:
+      <a href="#" class="btn btn-default" role="button">Link</a>
+      <br> contextual buttons:
+      <br>
+      <button class="btn btn-default">Default</button>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-warning">Warnig</button>
+      <button class="btn btn-danger">Delete</button>
+      <button class="btn btn-link">Link</button>
+
+      <br> button sizes:
+      <br>
+      <button class="btn btn-default btn-lg">large</button>
+      <button class="btn btn-default">default</button>
+      <button class="btn btn-primary btn-sm">small</button>
+      <button class="btn btn-default btn-xs" disabled>extra small and disabled</button>
+    </div>
+
+    <div class="container">
+      <h2>Tables</h2>
+
+      classes:
+      <ul>
+        <li>table-striped</li>
+        <li>table-bordered</li>
+        <li>table-hover</li>
+        <li>table-condensed</li>
+      </ul>
+
+      example table-bordered:
+      <table class="table-bordered">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>34</td>
+        </tr>
+        <tr>
+          <td>Stephanie</td>
+          <td>Landon</td>
+          <td>47</td>
+        </tr>
+        <tr>
+          <td>Mike</td>
+          <td>Johnson</td>
+          <td>19</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="container">
+      <h2>List Groups</h2>
+
+      List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just
+      about any content within. Check out the following example.
+
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+        <li class="list-group-item active">Add active to a list-group item to indicate the current active selection. e.g.</li>
+        <li class="list-group-item disabled">Add .disabled to a list-group-item to make it appear disabled. e.g.</li>
+      </ul>
+
+      <h6>Links and Buttons</h6>
+
+      Use links & buttons to create actionable list group items with hover, disabled, and active states by adding .list-group-item-action.
+      <br>
+      <br> example:
+      <div class="list-group">
+        <a href="#" class="list-group-item active">
+          list-group-item active
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">list-group-item list-group-item-action</a>
+        <a href="#" class="list-group-item list-group-item-action disabled">list-group-item list-group-item-action disabled</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Cards</h2>
+
+      Put all the content of the chapter in a new container to separate the content. A card is a flexible and extensible content
+      container. It includes options for headers and footers, a wide variety of content, contextual background colors, and
+      powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails.
+      Similar functionality to those components is available as modifier classes for cards. Cards are built with as little
+      markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox,
+      they offer easy alignment and mix well with other Bootstrap components. Below is an example of a basic card with mixed
+      content and a fixed width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent
+      element. This is easily customized with our various sizing options.
+      <br>
+      <br> example:
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Grids - Page Layout</h2>
+
+      Basically a grid is broken up into 12 blocks, which you can combine in the way you need it. It scales it to the size of the
+      device where the page is loaded.
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
